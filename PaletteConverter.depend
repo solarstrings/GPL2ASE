@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1634630003 source:c:\users\studioputer\documents\programming\paletteconverter\asewriter.c
+	<stdio.h>
+	<stdlib.h>
+	<inttypes.h>
+	"palette.h"
+
+1634640563 c:\users\studioputer\documents\programming\paletteconverter\palette.h
+
+1634653391 source:c:\users\studioputer\documents\programming\paletteconverter\paletteconverter.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<memory.h>
+	"aseWriter.h"
+
+1634614938 c:\users\studioputer\documents\programming\paletteconverter\asewriter.h
+	"palette.h"
+
