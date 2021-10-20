@@ -154,7 +154,7 @@ static void writeRBGPaletteValue(FILE *fp,int red, int green, int blue)
     IEEE754Green = int32ToBigEndian(IEEE754Green);
     IEEE754Blue = int32ToBigEndian(IEEE754Blue);
 
-    // write palette start
+    // write color start
     fwrite(COLOR_START,2,1,fp);
     // write RGB palette length
     fwrite(RGB_PAL_LENGTH,4,1,fp);
