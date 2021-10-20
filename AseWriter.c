@@ -30,7 +30,7 @@
 **                                                              // Other modes are "CMYK", "LAB " and "Gray"
 ** 00000020                     3F 38 B8 B9 3F 42 C2 C3 3F 39   // 3x float values in big endian IEEE754 format. Value between 0 and 1 per channel
 ** 00000030    B9 BA                                            // IEEE754 format continued. 3*uint32_t
-** 00000030          00 00                                      // Clor type 1*int16 (00 00 Global, 00 01 Spot, 00 02 Normal)
+** 00000030          00 00                                      // Color type 1*int16 (00 00 Global, 00 01 Spot, 00 02 Normal)
 **          --------------------------------------------------- //
 **     NEXT COLOR STARTS HERE AND REPEATS THE SAME STRUCTURE    //
 **           FOR EVERY COLOR UNTIL THE END OF THE FILE          //
