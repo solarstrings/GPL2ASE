@@ -4,12 +4,12 @@
 **
 ** GIMP is free software anyone can use, Adobe Photoshop not so much.
 **
-** Ihis converter was written for converting GIMP .gpl palettes to Adobe .ase palettes, for various reasons:
+** This converter was written for converting GIMP .gpl palettes to Adobe .ase palettes, for various reasons:
 **  - Sharing custom palettes with those who use Photoshop as their daily driver.
 **  - converting custom .gpl palettes to .ase for importing into blender for texture painting
 **  - Any other .ase need anyone might have
 **
-** The converter supports up to 2048 color palettes (way more than enough for pixelart)
+** The converter supports up to 2048 colors in a palette (way more than enough for pixelart)
 **
 ** Want more palette colors? Crank the #define MAX_PALETTE_COLORS 2048 up higher & recompile.
 ** Or rewrite the paletteT struct to dynamically allocate memory for the colors.
