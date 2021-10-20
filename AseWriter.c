@@ -8,10 +8,10 @@
 **
 ** 00000000    41 53 45 46 00 01 00 00 00 00 00 02 00 01 00 00      ASEF............
 ** 00000010    00 22 00 07 00 62 00 38 00 63 00 32 00 62 00 39      ."...b.8.c.2.b.9
-** 00000020    00 00 52 47 42 20 3F 38 B8 B9 3F 42 C2 C3 3F 39      ..RGB ?8¸¹?BÂÃ?9
-** 00000030    B9 BA 00 00 00 01 00 00 00 22 00 07 00 33 00 38      ¹º......."...3.8
+** 00000020    00 00 52 47 42 20 3F 38 B8 B9 3F 42 C2 C3 3F 39      ..RGB ?8Â¸Â¹?BÃ‚Ãƒ?9
+** 00000030    B9 BA 00 00 00 01 00 00 00 22 00 07 00 33 00 38      Â¹Âº......."...3.8
 ** 00000040    00 32 00 62 00 32 00 36 00 00 52 47 42 20 3E 60      .2.B.2.6..RGB >`
-** 00000050    E0 E1 3E 2C AC AD 3E 18 98 99 00 00                  àá>,¬­>."˜˜˜˜˜™..
+** 00000050    E0 E1 3E 2C AC AD 3E 18 98 99 00 00                  Ã Ã¡>,Â¬Â­>."ËœËœËœËœËœâ„¢..
 **
 ** Byte description:
 **          -----------------FILE HEADER BLOCK----------------- //
@@ -30,7 +30,7 @@
 **                                                              // Other modes are "CMYK", "LAB " and "Gray"
 ** 00000020                     3F 38 B8 B9 3F 42 C2 C3 3F 39   // 3x float values in big endian IEEE754 format. Value between 0 and 1 per channel
 ** 00000030    B9 BA                                            // IEEE754 format continued. 3*uint32_t
-** 00000030          00 00                                      // color type Color type 1*int16 (00 00 Global, 00 01 Spot, 00 02 Normal)
+** 00000030          00 00                                      // Clor type 1*int16 (00 00 Global, 00 01 Spot, 00 02 Normal)
 **          --------------------------------------------------- //
 **     NEXT COLOR STARTS HERE AND REPEATS THE SAME STRUCTURE    //
 **           FOR EVERY COLOR UNTIL THE END OF THE FILE          //
