@@ -114,7 +114,7 @@ static int machineIsLittleEndian()
 {
     unsigned int x = 1;     // 00 00 00 01 (Big Endian) 01 00 00 00 (Little Endian)
     char *c = (char*) &x;   // Get the first value
-    return (int)*c;         // c if it's a 01, then the machine is Little Endian
+    return (int)*c;         // convert to int and return the value, if it's a 1, then the machine is Little Endian
 }
 static void writeASEHeader(FILE *fp, int32_t numberOfPalettEntries)
 {
