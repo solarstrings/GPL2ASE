@@ -101,13 +101,13 @@ int loadGimpPalette(char *filename, paletteT *palette)
 void addAseFileEndingIfMmissing(char *filename, char *newFilename)
 {
     char fileNameEnding[5] = {0};   // char array for file name ending
-    int fileNamelength;             // length of the filename
+    int fileNamelength;             // length of the file name
     int fileNameEndingPosition;     // position where the .ase starts in the string
 
-    // if the filename and newFile parameters are valid
+    // if the file name and newFile parameters are valid
     if(filename != NULL && newFilename != NULL){
 
-        // get the length of the filename
+        // get the length of the file name
         fileNamelength = strlen(filename);
 
         // calculate the starting position for the file name ending
@@ -115,14 +115,14 @@ void addAseFileEndingIfMmissing(char *filename, char *newFilename)
         // copy the last four characters in the file name to the fileNameEnding string
         sprintf(fileNameEnding,filename+fileNameEndingPosition);
 
-        // if the filename does not end with ".ase"
+        // if the file name does not end with ".ase"
         if(strcmp(fileNameEnding,".ase") != 0 && strcmp(fileNameEnding,".ASE") != 0){
-            // add the .ase to the end of the new filename
+            // add the .ase to the end of the new file name
             sprintf(newFilename,"%s.ase",filename);
         }
-        // if the filename already ens with .ase
+        // if the file name already ends with .ase
         else{
-            // copy the filename as is
+            // copy the file name as is
             sprintf(newFilename,"%s",filename);
         }
     }
@@ -161,7 +161,7 @@ int main(int argc, char *argv[])
         printProgramInfo(1);
 
     }
-    // allocate memory for the filename (add 4 extra characters for .ase file ending)
+    // allocate memory for the file name (add 4 extra characters for .ase file ending)
     paletteName = (char *) malloc((strlen(argv[2])+4)*sizeof(char));
     // memory allocation failed
     if(paletteName == NULL){
@@ -170,7 +170,7 @@ int main(int argc, char *argv[])
         // exit the program
         exit(1);
     }
-    // add .ase to the adobe ase filename if missing
+    // add .ase to the adobe ase file name if missing
     addAseFileEndingIfMmissing(argv[2],paletteName);
 
     // print program info without usage text
