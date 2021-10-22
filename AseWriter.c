@@ -23,9 +23,9 @@
 ** 00000000                                              00 00  // RGB_PAL_LENGTH 00 00 00 22 (the next 34 bytes holds the RGB color information)
 ** 00000010    00 22                                            // RGB_PAL_LENGTH continued
 ** 00000010          00 07                                      // Color hexcode string length 7 characters (incl. string terminator)
-** 00000010                00 62 00 38 00 63 00 32 00 62 00 39  // Color hexcode 6 characters unit16 double byte = 14 hex bytes
+** 00000010                00 62 00 38 00 63 00 32 00 62 00 39  // Color hexcode 6 characters unit16 double byte = 12 hex bytes
 **                                                              // Color code #b8c2b9 = .b.8.c.2.b.9)
-** 00000020    00 00                                            // String terminator 00 00
+** 00000020    00 00                                            // String terminator 00 00 (last two hex bytes)
 ** 00000020          52 47 42 20                                // Color mode "RGB " 4*char (the one we care about)
 **                                                              // Other modes are "CMYK", "LAB " and "Gray"
 ** 00000020                     3F 38 B8 B9 3F 42 C2 C3 3F 39   // 3x float values in big endian IEEE754 format. Value between 0 and 1 per channel
